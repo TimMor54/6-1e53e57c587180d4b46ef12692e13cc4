@@ -1,0 +1,775 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Объекты ЮНЕСКО и ООПТ в мире (6)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1e53e57c-5871-80d4-b46e-f12692e13cc4" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1632904080322-e71e16a5987f?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🏯</span></div><h1 class="page-title" dir="auto">Объекты ЮНЕСКО и ООПТ в мире (6)</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81db-86bc-d0038f89b824" class=""><strong><span style="border-bottom:0.05em solid">UNESCO</span></strong><span style="border-bottom:0.05em solid"> - специализированная организация в составе ООН, которая включает достопримечательности в список всемирного наследия</span></p></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8162-a309-eba1368ba866" class="">Создана <strong>16 ноября 1945 года</strong></p></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81d8-b4a7-cd0b0b692d0c" class="">Штаб-квартира находится в <strong>Париже</strong></p></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-80dc-bf54-e67d08be163d" class="">
+</p></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81bc-b202-d6ecb6c35603" class="">Важно понимать, что ЮНЕСКО - <strong>не только про достопримечательности,</strong> но и про вопросы грамотности/национальных культур/проблемы социальных наук/геологии и т.п</p></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81b5-8d2e-f6154fe0f0dc" class="image" style="text-align:left"><a href="342px-UNESCO_logo_English.svg.png"><img style="width:342.0000305175781px" src="342px-UNESCO_logo_English.svg.png"/></a><figcaption>Эмблема UNESCO</figcaption></figure></div><div style="display:contents" dir="auto"><hr id="1e53e57c-5871-81a4-bef2-dcd92367c5b0"/></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-8124-a448-fe3004be27bc" class="">Критерии внесения во Всемирное наследние ЮНЕСКО</h2></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-814d-8800-efe05c001655" class="">Засчет стремления к объективности были составлены оценочные критерии (10 штук). <span style="border-bottom:0.05em solid">Они подразделяются на 2 основные группы:</span></p></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-815d-9241-c22aab4c870a" class=""><strong><span style="border-bottom:0.05em solid">Культурные критерии:</span></strong></p></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-812e-9518-c8f60615e70f" class="bulleted-list"><li style="list-style-type:disc"><strong>(I)</strong> Объект представляет собой шедевр человеческого созидательного гения. <mark class="highlight-yellow_background">= шедевр</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ae-97aa-fc98c35e7361" class="bulleted-list"><li style="list-style-type:disc"><strong>(II)</strong> Объект свидетельствует о значительном взаимовлиянии человеческих ценностей в данный период времени или в определённом культурном пространстве, в архитектуре или в технологиях, в монументальном искусстве, в планировке городов или создании ландшафтов.<mark class="highlight-yellow_background"> = иллюстрирует взаимодействие на развитие чего-либо</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81de-81f0-c8c0dba595e3" class="bulleted-list"><li style="list-style-type:disc"><strong>(III)</strong> Объект является уникальным или, по крайней мере, исключительным для культурной традиции или цивилизации, которая существует до сих пор или уже исчезла.<mark class="highlight-yellow_background"> = иллюстрация прошлого</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d8-95fb-dbc3c69ffe52" class="bulleted-list"><li style="list-style-type:disc"><strong>(IV)</strong> Объект является выдающимся примером конструкции, архитектурного или технологического ансамбля, или ландшафта, которые иллюстрируют значимый период человеческой истории. <mark class="highlight-yellow_background">= исторически важный контекст</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81af-aeee-d242c37d1046" class="bulleted-list"><li style="list-style-type:disc"><strong>(V)</strong> Объект является выдающимся примером человеческого традиционного сооружения, с традиционным использованием земли или моря, являясь образцом культуры (или культур) или человеческого взаимодействия с окружающей средой, особенно если она становится уязвимой из-за сильного влияния необратимых изменений. <mark class="highlight-yellow_background">= иллюстрация локальной культуры в экологическом контексте</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c9-82a0-e02c332b814e" class="bulleted-list"><li style="list-style-type:disc"><strong>(VI)</strong> Объект напрямую или вещественно связан с событиями или существующими традициями, с идеями, верованиями, с художественными или литературными произведениями и имеет исключительную мировую важность. (По мнению комитета ЮНЕСКО, этот критерий предпочтительно использовать вместе с каким-либо ещё критерием или критериями). <mark class="highlight-yellow_background">= связь с важными мировыми событиями/традициями</mark></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8198-b641-ed9da3ee31d2" class=""><strong><span style="border-bottom:0.05em solid">Природные критерии:</span></strong></p></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-816b-bb81-c024ade6dda3" class="bulleted-list"><li style="list-style-type:disc"><strong>(VII)</strong> Объект представляет собой природный феномен или пространство исключительной природной красоты и эстетической важности. <mark class="highlight-yellow_background">= очень красиво или уникально</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-812d-b19f-d9bd44fe1dec" class="bulleted-list"><li style="list-style-type:disc"><strong>(VIII)</strong> Объект является выдающимся образцом главных этапов истории Земли, в том числе памятником прошлого, символом происходящих геологических процессов в развитии рельефа или символом геоморфологических или физико-географических особенностей. <mark class="highlight-yellow_background">= геохронологический памятник</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c6-9a42-fe466bb3f8a6" class="bulleted-list"><li style="list-style-type:disc"><strong>(IX)</strong> Объект является выдающимся образцом происходящих экологических или биологических процессов в эволюции и развитии земных, пресноводных, береговых и морских экосистем и растительных и животных сообществ. <mark class="highlight-yellow_background">= показал процесс эволюции некоторого вида</mark></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-817a-8042-ccef30570994" class="bulleted-list"><li style="list-style-type:disc"><strong>(X)</strong> Объект включает в себя наиболее важную или значительную естественную среду обитания для сохранения в ней биологического многообразия, в том числе исчезающих видов исключительной мировой ценности с точки зрения науки и охраны. <mark class="highlight-yellow_background">= исключительное биологическое разнообразие</mark></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81c3-a2c0-ecade2efd360" class="">Существуют и смешанные объекты - <strong>культурные ландшафты</strong>. Они включаются в список по совокупности природных и культурных критериев.</p></div><div style="display:contents" dir="auto"><hr id="1e53e57c-5871-81c1-b576-e58d5930a4e0"/></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-81e9-ae6f-c0fa64af05cc" class="">Исключения из списка ЮНЕСКО</h2></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81ae-ac65-dc559797df39" class="">За всё время такой “чести” удостоились лишь 3 объекта:</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81a6-8ddf-c68c1b4eacda" class="numbered-list" start="1"><li>(2007) Резерват аравийского орикса (Оман 🇴🇲) <mark class="highlight-red">не прекратили охоту на этого самого орикса, а также сократили заповедные территории</mark></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-818e-8650-dfe8dcd080a7" class="numbered-list" start="2"><li>(2009) Дрезденская долина Эльбы (Германия 🇩🇪) <mark class="highlight-red">построили мост в охранной зоне</mark></li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8101-9120-ed515d708c02" class="numbered-list" start="3"><li>(2021) Ливерпуль (Великобритания 🇬🇧) <mark class="highlight-red">утеря городом признаков, передающих уникальность</mark></li></ol></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81fc-a792-ddb7bcbea12a" class="">
+</p></div><div style="display:contents" dir="auto"><hr id="1e53e57c-5871-810f-b51f-fb1b60f298a8"/></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-810a-9bae-e280adfeff67" class="">Топ стран по количеству объектов ЮНЕСКО</h2></div><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1e53e57c-5871-813c-9d6f-c036a9a4030c"><div style="font-size:1.5em"><span class="icon">🏆</span></div><div style="width:100%"><strong>Топ-5 (50 и более объектов):</strong><br/><strong>Италия</strong> (<span style="border-bottom:0.05em solid">60</span>) 🇮🇹<br/><strong>Китай</strong> (<span style="border-bottom:0.05em solid">59</span>) 🇨🇳<br/><strong>Германия</strong> (<span style="border-bottom:0.05em solid">54</span>) 🇩🇪<br/><strong>Франция</strong> (<span style="border-bottom:0.05em solid">53</span>) 🇫🇷<br/><strong>Испания</strong> (<span style="border-bottom:0.05em solid">50</span>) 🇪🇸</div></figure></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81c2-abde-da55cfa57812" class="">Дальше идёт <strong>Индия</strong> (<span style="border-bottom:0.05em solid">43</span>), <strong>Великобритания</strong> с <strong>Мексикой</strong> (по <span style="border-bottom:0.05em solid">35</span>) и <strong>Россия</strong> (<span style="border-bottom:0.05em solid">32</span>, но это без учета Крыма)</p></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8178-a80f-c355769c7426" class="">В остальных государствах — менее 30 объектов.</p></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8168-bc03-d4625965325a" class="image" style="text-align:left"><a href="PNG_image.png"><img style="width:528px" src="PNG_image.png"/></a><figcaption>Государства лидеры по количеству объектов всемирного наследия ЮНЕСКО</figcaption></figure></div><div style="display:contents" dir="auto"><hr id="1e53e57c-5871-81ce-b28e-e927617389d5"/></div><div style="display:contents" dir="auto"><h1 id="1e53e57c-5871-8121-abee-e7dfc7882565" class="">Мировые ООПТ и ЮНЕСКО (по отдельности)</h1></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-81e5-b0c6-fbbef68d8444" class="">Европа: </h2></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81d2-a4b3-c99a8c7c615a" class="numbered-list" start="1"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Тингведлир</span></strong><strong> (Исландия)</strong> 🇮🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81b2-bf23-f4b628b3093a" class="image" style="text-align:left"><a href="image.png"><img style="width:528px" src="image.png"/></a><figcaption>Рифт Сильфра - часть национального парка и объект ЮНЕСКО </figcaption></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81b4-8afc-e36006205d50" class="bulleted-list"><li style="list-style-type:disc">Этот парк занимает особое место в истории страны, так как именно здесь, начиная с 930г, собирался древний исландский парламент - <em><mark class="highlight-default"><strong>Альтинг</strong></mark></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a0-b4e0-e48d0f1b9757" class="bulleted-list"><li style="list-style-type:disc">Здесь проходит рифтовый разлом Сильфа, который является границей Северо-Американской и Евразийской плит</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c3-b622-fe84378311cf" class="bulleted-list"><li style="list-style-type:disc">Озеро <em><mark class="highlight-default"><strong>Тингваллавтн</strong></mark></em> - самое большое озеро Исландии </li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8143-bf0e-c909e3e1555f" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-813c-8db8-ed012be46ecc" class="numbered-list" start="2"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Юстедалсбреэн</span></strong><strong> (Норвегия) 🇳🇴</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8141-b045-d6fa97955344" class="image" style="text-align:left"><a href="image%201.png"><img style="width:528px" src="image%201.png"/></a><figcaption>Ледник посещают 300 тыс. туристов в год</figcaption></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8154-9b88-d81558aed28c" class="bulleted-list"><li style="list-style-type:disc">Тут находится самый большой континентальный ледник Европы <em><strong>(Юстедалсбреэн)</strong></em> - имеет 5 ответвлений </li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8158-8959-fd98301bd2ba" class="bulleted-list"><li style="list-style-type:disc">Также тут есть фермы, которые были поглощены данным ледником в 1750г</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-810d-bf5f-e3b12b4d004b" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8199-97ff-eefd714e58d7" class="numbered-list" start="3"><li><strong><span style="border-bottom:0.05em solid">Беловежский национальный парк</span></strong><strong> (Польша/Беларусь) 🇵🇱🇧🇾</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8170-aef3-c5c408a77874" class="image" style="text-align:left"><a href="image%202.png"><img style="width:480px" src="image%202.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8107-aff2-e23193fc37d9" class="bulleted-list"><li style="list-style-type:disc">Тут находится объект ЮНЕСКО - <em><strong>Беловежская пуща </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819f-b3f3-c49bdde3e2e1" class="bulleted-list"><li style="list-style-type:disc">Представляет собой наиболее крупный остаток реликтового леса, который произрастал на территории Европы до начала ее активного хозяйственного освоения человеком.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81e3-9c58-dcdbdee31656" class="bulleted-list"><li style="list-style-type:disc">В национальном парке обитают<em><strong> зубры</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8012-8bc0-c0da98d9b951" class="bulleted-list"><li style="list-style-type:disc">Здесь находится водораздел <em><strong>Черного и Балтийского морей </strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-818c-a5f1-c929a852a35f" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8194-85e1-f4e8011d167c" class="numbered-list" start="4"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Аггтелек</span></strong><strong> (Венгрия) 🇭🇺</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-810f-b23c-d2fb10981856" class="image" style="text-align:left"><a href="image%203.png"><img style="width:432px" src="image%203.png"/></a><figcaption>Пещера Барадла - крупнейшая сталактитовая пещера Европы (26км)</figcaption></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81bc-aac7-e928d3ff69cc" class="bulleted-list"><li style="list-style-type:disc">Национальный парк включен в список <em><strong>наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d1-b314-fd95ffff38d3" class="bulleted-list"><li style="list-style-type:disc">Находится на севере Венгрии на территории пещерного района <em><strong>Аггетелек</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8061-9119-ed56b619f5f3" class="bulleted-list"><li style="list-style-type:disc">Типичный образец карстового региона - его территория покрыта многочисленными известковыми скалами, множество пещер, образующих лабиринты</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-819a-8043-c61b265476c2" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81de-b8af-f069e713aeab" class="numbered-list" start="5"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Плитвицкие озера</span></strong><strong> (Хорватия) 🇭🇷</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8195-bf2e-f0092f4d37ea" class="image" style="text-align:left"><a href="image%204.png"><img style="width:480px" src="image%204.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81cf-abf1-f378560c484e" class="bulleted-list"><li style="list-style-type:disc">Озера данного парка включены в<em><strong> список ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8176-812c-dbd74af6bc1a" class="bulleted-list"><li style="list-style-type:disc">Воды реки <em><strong>Корана</strong></em> (144км), текущие сквозь известняк, за тысячи лет образовали барьеры травертина - естественные плотины, которые, в свою очередь, создали ряд живописных озер, водопадов и пещер</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81e1-b996-eaf643a9759f" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8143-be04-e0b461ecc7b8" class="numbered-list" start="6"><li><strong><span style="border-bottom:0.05em solid">Дельта Дуная</span></strong><strong> (Украина/Румыния) 🇺🇦🇹🇩</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-818e-b32a-e5d6bb424999" class="image" style="text-align:left"><a href="image%205.png"><img style="width:384px" src="image%205.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d7-bec7-db53f0430b17" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Дельта Дуная</strong></em> - вторая по величине речная дельта Европы (после дельты Волги). Площадь (4152км2) из которых 83% в Румынии и 17% в Украине</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c4-aa9f-edfff9e4479e" class="bulleted-list"><li style="list-style-type:disc">Внесена в список <em><strong>наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81af-a047-cd64da42522d" class="bulleted-list"><li style="list-style-type:disc">Известна как место обитания аистов и пеликанов</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81ac-823e-f805c31b090a" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81d2-86d4-cc4994d5e0a0" class="numbered-list" start="7"><li><strong><span style="border-bottom:0.05em solid">Мостовая гигантов</span></strong><strong> (Великобритания) 🇬🇧</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8181-a2c4-e2140527c2eb" class="image" style="text-align:left"><a href="image%206.png"><img style="width:480px" src="image%206.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81f7-8e81-fcf6f9980a78" class="bulleted-list"><li style="list-style-type:disc">Находится в <em><strong>Северной Ирландии</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-810a-93e4-e78d1ceae24f" class="bulleted-list"><li style="list-style-type:disc">Дорога и побережье <em><strong>Козвэй-Кост</strong></em>, на котором находится мостовая входят в <em><strong>список ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8185-99cd-f477ed4edde3" class="bulleted-list"><li style="list-style-type:disc">Представляет собой базальтовые столбы, которые образовались в результате <em><strong>извержения древнего подводного вулкана. </strong></em>Самая высокая из базальтовых колонн имеет высоту 12м.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8133-9fe5-dc39a0323770" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8195-84fd-f5f9e2bc6676" class="numbered-list" start="8"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Доньяна</span></strong><strong> (Испания)</strong> 🇪🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8186-a8ff-feed9d3bf4a7" class="image" style="text-align:left"><a href="image%207.png"><img style="width:528px" src="image%207.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8154-ac3b-c95b5335e95a" class="bulleted-list"><li style="list-style-type:disc">Представляет собой национальный парк в <em><strong>Андалусии </strong></em>(юго-запад Испании) и входит в список <em><strong>ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-814d-b4e5-fc538d146a3f" class="bulleted-list"><li style="list-style-type:disc">В парке охраняются сосновые <strong>леса на дюнах океанского побережья</strong> и болота в <em><strong>устье реки Гвадалквивир</strong></em> (657км) </li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8154-b51c-e2091b3e5a3a" class="bulleted-list"><li style="list-style-type:disc">На зимовку ежегодно сюда прилетает свыше 500 тысяч птиц</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ca-a0b5-c174b54a52a4" class="bulleted-list"><li style="list-style-type:disc">Известен еще тем, что здесь обитает наибольшее количество <em><strong>испанских рысей.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8159-8864-c330e6a77df3" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-81d7-aeb1-fbabf0d6de30" class="">Азия: </h2></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81a1-b679-fa9a1e3c3a4f" class="numbered-list" start="1"><li><strong><span style="border-bottom:0.05em solid">Древний город Иераполис</span></strong><strong> и источники Памуккале (Турция) 🇹🇷</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81bb-9bf1-f248c6553573" class="image" style="text-align:left"><a href="image%208.png"><img style="width:432px" src="image%208.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8152-bdfe-fde3a2c1310b" class="bulleted-list"><li style="list-style-type:disc">Оба входят в состав <em><strong>природного и культурного памятника ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8167-9593-f83d82bafda0" class="bulleted-list"><li style="list-style-type:disc">В том месте, где насыщенные кальцием термальные воды выходят на поверхность высокого холма, сформировался ландшафт “Памуккале” - хлопковая крепость. Предстает в виде террасных ванн из кальция - <em><strong>травертины</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-818f-b473-fc18cee2baf9" class="bulleted-list"><li style="list-style-type:disc">Древний город был основан 4000 лет назад неподалеку от горячих источников.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81de-ab7f-c39547ab01dd" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81dc-be97-ed45ea359327" class="numbered-list" start="2"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Гёреме</span></strong><strong> (Турция) 🇹🇷</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8151-83c5-f08fe3f4aa9c" class="image" style="text-align:left"><a href="image%209.png"><img style="width:528px" src="image%209.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c5-963e-e7c80c146b21" class="bulleted-list"><li style="list-style-type:disc">Представляет собой музей под открытым небом <em><strong>в Каппадокии - объект ЮНЕСКО </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8118-a903-cad2c3607ef8" class="bulleted-list"><li style="list-style-type:disc">Представлен ландшафтом, сформированным процессом эрозии. В древности здесь была зона вулканизма и были крупные массивы вулканов, но со временем в результате эндогенных процессов лавовое плато превратилось в столбы характерного вида <em><strong>(Перибаджаралы) </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ac-8f3a-e64adb3317bf" class="bulleted-list"><li style="list-style-type:disc">Здесь сосредоточено множество вырезанных в скалах пещерных церквей и христианских монастырей - <em><strong>памятники византийского искусства.</strong></em> Более того - есть целые <em><strong>пещерные города</strong></em>.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-819a-bd61-e68cf936c19b" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-810d-a4c1-e49bd08f98a0" class="numbered-list" start="3"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Сагарматха</span></strong><strong> (Непал)</strong> 🇳🇵</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81f6-a1c6-de6694843e19" class="image" style="text-align:left"><a href="image%2010.png"><img style="width:576px" src="image%2010.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819a-a16a-fa4ed543f67a" class="bulleted-list"><li style="list-style-type:disc">Тоже включен в <em><strong>список ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8134-90c7-e51c314b0330" class="bulleted-list"><li style="list-style-type:disc">Находится в Гималаях, недалеко от Катманду на северо-востоке Непала</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ca-82c9-c32ffb3399d6" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Это самая высокогорная охраняемая территория на Земле. Парк лежит на склонах Эвереста</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d2-95a4-d564651f33e8" class="bulleted-list"><li style="list-style-type:disc">Территория национального парка составляет 114800га. Северная граница парка проходит <em><strong>на границе с Китаем</strong></em>. В южной части парка представлены 2 зоны, в которых любая деятельность человека запрещена</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81c9-82ef-f7c2d07784cf" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81ce-92b8-f03fc2644d24" class="numbered-list" start="4"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Казиранга</span></strong><strong> (Индия)</strong> 🇮🇳</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81a4-957c-c6b761a3a561" class="image" style="text-align:left"><a href="image%2011.png"><img style="width:480px" src="image%2011.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8173-b8a8-db3ababf9995" class="bulleted-list"><li style="list-style-type:disc">Включен в список <em><strong>наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8138-a6a5-cb0129fb5871" class="bulleted-list"><li style="list-style-type:disc">Парк расположен в центре штата <em><strong>Ассам</strong></em> и является одной из немногих областей в Восточной Индии с <em><strong>нетронутой человеком природой</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8153-aca8-cccd7c66b4c4" class="bulleted-list"><li style="list-style-type:disc">Здесь обитают <em><strong>однорогие носороги (крупнейшая популяция), тигры, слоны, пантеры и медведи</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-815a-8dd6-df3b557284bb" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8160-acf0-d6cb3e6f3a56" class="numbered-list" start="5"><li><strong>Национальный парк Сундарбан </strong><strong><span style="border-bottom:0.05em solid">(Индия)</span></strong> 🇮🇳</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-819b-b7f3-f4ef006fa84a" class="image" style="text-align:left"><a href="image%2012.png"><img style="width:480px" src="image%2012.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ff-95e2-eb28e9c53e21" class="bulleted-list"><li style="list-style-type:disc">Представляет собой часть <em><strong>самого большого мангрового леса в мире, расположенного в дельте Ганга, в основном в Бангладеш </strong></em>🇧🇩</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8108-ab9b-ddd253adf923" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819e-9b40-e1f54148cb60" class="bulleted-list"><li style="list-style-type:disc">Влажный тропический климат способствовал возникновению в этой местности уникального растительного комплекса, соединяющего в себе растения из Юго-Западной Азии, Эфиопии, Полинезии</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-816c-928e-fbbbce743354" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8162-9ee5-ed8b9408231f" class="numbered-list" start="6"><li><strong><span style="border-bottom:0.05em solid">Бухта Халонг</span></strong><strong> (Вьетнам) </strong>🇻🇳</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-816a-8d29-c824f3dd3c3a" class="image" style="text-align:left"><a href="image%2013.png"><img style="width:480px" src="image%2013.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819d-97d4-db01bca74de1" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Объект списка наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a5-a0b9-c6e99cd27daf" class="bulleted-list"><li style="list-style-type:disc">Находится в <em><strong>Тонкинском заливе Южно-Китайского моря</strong></em> и представляет собой множество одиночных вершин, которые образовались вследствие башенного карста</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81fe-a1b5-e0ff73b30c2a" class="bulleted-list"><li style="list-style-type:disc">По легенде здесь жил дракон, который разломал все своим хвостом, оставив только одиночные скалы </li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-812d-9610-e1d551e5ae16" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-813b-90e3-ed0a47c58769" class="numbered-list" start="7"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Пуэрто-Принцесса</span></strong><strong> (Филиппины) 🇵🇭</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81af-8c20-db3353beab9e" class="image" style="text-align:left"><a href="image%2014.png"><img style="width:432px" src="image%2014.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8176-9241-d6445750b6a9" class="bulleted-list"><li style="list-style-type:disc">Находится на Филиппинах на острове Палаван и <em><strong>входит в список ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819d-a2b1-e4adf0e86920" class="bulleted-list"><li style="list-style-type:disc">Парк находится в районе горного хребта <em><strong>Сент-Пол</strong></em> (2351м) в северной части острова. Вход в пещеру находится со стороны города Сабанг.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81e9-ad31-c3469253f044" class="bulleted-list"><li style="list-style-type:disc">Парк расположен  в зоне развития карста. Река протекает под землей, в пещере, <em><strong>и ее длина составляет 8,2км</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-810a-81f1-e502c0e75139" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8146-a3be-dbe4bc4fea2c" class="numbered-list" start="8"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Гунунг-Мулу</span></strong><strong> (Малайзия) 🇲🇾</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8133-81bf-c3121e1f38e9" class="image" style="text-align:left"><a href="image%2015.png"><img style="width:480px" src="image%2015.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81f4-bcf0-f34ae9594b33" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-813e-af2e-ef2e4a1dd18e" class="bulleted-list"><li style="list-style-type:disc">Находится на Калимантане и охватывает невероятное количество пещер и <em><strong>карстовых образований + горные дождевые леса </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-816a-817e-c1d3b0a41b4e" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Здесь находится крупнейшая пещера Азии - </strong></em><em><mark class="highlight-default"><strong>Гуа-Эир-Джерни, имеющая </strong></mark></em><em><strong>длину 189км</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81f6-915d-cb9c262f6ddb" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Здесь находится крупнейший грот в мире -</strong></em><em><mark class="highlight-red"><strong> </strong></mark></em><em><mark class="highlight-default"><strong>Саравак</strong></mark></em><em><strong> в пещере Лубанг Насиб Багус</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81d3-acba-c9e6010d387f" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8175-b202-da4a50e4cbc6" class="numbered-list" start="9"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Кинабалу </span></strong><strong>(Малайзия)</strong> 🇲🇾</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-810a-a0b5-e871c8a0377e" class="image" style="text-align:left"><a href="image%2016.png"><img style="width:480px" src="image%2016.png"/></a><figcaption>Данный национальный парк находится на острове Калимантан</figcaption></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-814c-8e7c-c3e061c0e0dc" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится в списке наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-810c-8bab-e880ce466045" class="bulleted-list"><li style="list-style-type:disc">Является <em><strong>первым национальным парком Малайзии</strong></em> и знаменит своей разнообразной флорой и фауной - орхидеи и плотоядные растения <em><strong>(Непентес Раджа) </strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8101-be1a-c9dd7ced2b49" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81fb-8355-ff8d26e9839f" class="numbered-list" start="10"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Комодо</span></strong><strong> (Индонезия) 🇮🇩</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-812e-9d5d-c90b4b3a1979" class="image" style="text-align:left"><a href="image%2017.png"><img style="width:480px" src="image%2017.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8103-9a36-f6cfb2d322a5" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список наследия ЮНЕСКО.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8145-baf5-db8c6a693938" class="bulleted-list"><li style="list-style-type:disc">Расположен на <em><strong>Малых Зондских островах (Комодо, Падар, Ринча).</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81b7-b304-dc29bbab3ac8" class="bulleted-list"><li style="list-style-type:disc">Заповедник создан в первую очередь для защиты <em><strong>уникальных Комодских варанов</strong></em> - гигантских ящеров длиной до 3х метров и весом до 150кг.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8110-b893-dbe0eee44020" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81a2-9e98-f93910be0d66" class="numbered-list" start="11"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Лоренц</span></strong><strong> (Индонезия) </strong>🇮🇩</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8106-b49d-daf8cac0a783" class="image" style="text-align:left"><a href="image%2018.png"><img style="width:480px" src="image%2018.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81cc-9529-eff455d89944" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является самой большой природоохранной территорией в Юго-Восточной Азии</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8139-8d21-e83343b525ce" class="bulleted-list"><li style="list-style-type:disc">Находится в провинции <em><strong>Папуа на острове Новая Гвинея.</strong></em> В парке находится высочайшая гора Океании - <em><mark class="highlight-default"><strong>Джая </strong></mark></em><em><strong>(4884м) + горные тропические леса</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81d4-b864-dd692fd3670e" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8147-a1e7-dae4e1acd9c9" class="numbered-list" start="12"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Три параллельные реки</span></strong><strong> (Китай) 🇨🇳</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81b3-8d7f-c5cffe878154" class="image" style="text-align:left"><a href="image%2019.png"><img style="width:528px" src="image%2019.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8172-b8f0-f6abf0f6cd94" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Восемь участков данного нац. парка входят в список наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8171-ba8c-d03d3c2599a9" class="bulleted-list"><li style="list-style-type:disc">Расположен в <em><strong>Сино-Тибетских горах в провинции Юньнань</strong></em>. На территории парка располагаются верховья трех крупнейших рек Азии: <em><strong>Янцзы, Меконга и Салуина</strong></em>, которые протекают в ущельях до 3000м</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8113-b616-c92772aceaaf" class="bulleted-list"><li style="list-style-type:disc">Реки текут практически параллельно с севера на юг, потом Янцзы сворачивает в ущелье <em><strong>Прыгающего тигра</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81f2-a4bb-ee058127065b" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-818a-85c1-cdf93ce09ea8" class="numbered-list" start="13"><li><strong><span style="border-bottom:0.05em solid">Горы Сираками </span></strong><strong>(Япония)</strong> 🇯🇵</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-811d-b86d-df8a6cd0e7e6" class="image" style="text-align:left"><a href="image%2020.png"><img style="width:576px" src="image%2020.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819c-9f2d-c6a476102821" class="bulleted-list"><li style="list-style-type:disc"><strong>Горы Сираками-Санти (1087м) включены в список наследия ЮНЕСКО </strong></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81da-83d6-d0982ffb5abc" class="bulleted-list"><li style="list-style-type:disc">Представляет собой труднодоступную местность на севере острова Хонсю и включает <em><strong>последние уцелевшие участки девственных буковых лесов умеренного-холодного климата</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81f0-80e2-cac750e0cbf1" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-8137-b184-f924b6659ecc" class="">Африка: </h2></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-814d-b831-ea0cf6364aea" class="numbered-list" start="1"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Салонга</span></strong><strong> (ДРК) 🇨🇩</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-815d-ab8d-dce1b0311996" class="image" style="text-align:left"><a href="image%2021.png"><img style="width:392px" src="image%2021.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8150-ba26-c59c003a7ab6" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8139-8888-ccde65ce302f" class="bulleted-list"><li style="list-style-type:disc">Салонга является самым крупным из числа африканских резерватов, располагающихся в зоне экваториальных лесов. Он находится в центральной части бассейна реки Конго, и <em><strong>достижим только по воде</strong></em>, много эндемиков и девственные леса.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81a9-8ef5-f5145538a7b2" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81cd-83a6-cc83b725f3ec" class="numbered-list" start="2"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Вирунга</span></strong><strong> (ДРК)</strong> 🇨🇩</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8107-a243-c3f98ff0ddaf" class="image" style="text-align:left"><a href="image%2022.png"><img style="width:480px" src="image%2022.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8119-8233-dde9fcc3a12e" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список наследия ЮНЕСКО </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8194-bb6e-c030b60f4260" class="bulleted-list"><li style="list-style-type:disc">Является одним из старейших национальных парков Африки и был основан в 1929 году</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8152-be82-d81dcaf0043e" class="bulleted-list"><li style="list-style-type:disc">Ландшафты на территории нац. парка очень разнообразны, здесь можно встретить <strong>травянистые и древесные саванны, низкорослые постоянно влажные леса, бамбуковые заросл</strong>и и т.д. Здесь обитают <em><strong>горные гориллы</strong></em> .</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8191-ab38-f528ff25bd1d" class="bulleted-list"><li style="list-style-type:disc">На территории парка располагаются крупные <em><strong>горы Вирунга, которые являются частью Восточно-Африканского разлома</strong></em> + много вулканов - <em><mark class="highlight-default"><strong>Карисимби</strong></mark></em> (4507м) + <em><strong>озеро Альберт</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-813c-b737-fca33b54d32c" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81a1-956c-c9776e6d9ee9" class="numbered-list" start="3"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Горы Рувензори</span></strong><strong> (Уганда) </strong>🇺🇬</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8181-af0e-f6048bca2d3c" class="image" style="text-align:left"><a href="image%2023.png"><img style="width:432px" src="image%2023.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8191-8fef-d81170d0a26c" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8121-9940-d541bf038e7b" class="bulleted-list"><li style="list-style-type:disc">Здесь расположены очень высокие <em><strong>горы Рувензори</strong></em> - в частности, топ-3 по высоте вершина Африки - <em><mark class="highlight-default"><strong>Стэнли (5109м).</strong></mark></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819e-8536-db70086705de" class="bulleted-list"><li style="list-style-type:disc">Заснеженные пики Рувензори возвышаются над сухими приэкваториальными долинами. Снежные поля и ледники с водопадами делают национальный парк одним из наиболее красивых мест в Африке.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ea-8159-eebb8cd24b79" class="bulleted-list"><li style="list-style-type:disc">Парк известен богатым видовым разнообразием произрастающих в нем растений - много из них растут на высоте до 4000м.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81d7-9877-dc63fd24ae3c" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-819d-85aa-cba659fdb923" class="numbered-list" start="4"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Серенгети</span></strong><strong> (Танзания)</strong> 🇹🇿</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81f1-917e-fa98e2a939f0" class="image" style="text-align:left"><a href="image%2024.png"><img style="width:576px" src="image%2024.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-818c-b51c-f8f1893e9424" class="bulleted-list"><li style="list-style-type:disc">Расположен в одноименном засушливом регионе на границе <em><strong>Кении и Танзании в районе Великого Африканского Разлома</strong></em>.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8110-a17f-fd934bd67023" class="bulleted-list"><li style="list-style-type:disc">Низкотравные холмистые долины площадью 30т км2. Их покрывает сочная трава, которая прекрасно растет на плодородной почве вулканического происхождения</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c8-ae63-c601379939b4" class="bulleted-list"><li style="list-style-type:disc">Тут очень много животных - <em><strong>антилопы, зебры, носороги, жирафы, слоны, львы, гиены, бегемоты</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8163-b7f9-fa24fcd927c6" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81c6-8846-f9f17ce5e446" class="numbered-list" start="5"><li><strong><span style="border-bottom:0.05em solid">Заповедник Нгоронгоро</span></strong><strong> (Танзания) </strong>🇹🇿</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8135-9862-cf2abe405812" class="image" style="text-align:left"><a href="image%2025.png"><img style="width:432px" src="image%2025.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-818e-994b-daee74558f69" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Кратер Нгоронгоро включен в список наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8135-8ea6-c84de17dad73" class="bulleted-list"><li style="list-style-type:disc">Образовался в результате коллапса вулкана 2,5млн лет назад. Глубина - 610м, высота - 2286м</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-812f-bf35-ccda588e2af0" class="bulleted-list"><li style="list-style-type:disc">Кратер знаменит своей огромной <strong>популяцией фламинго</strong> + там есть своя среда обитания многих организмов</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81fa-88ee-f99847cf7e92" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8193-b16a-fc21b9f4ae77" class="numbered-list" start="6"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Килиманджаро</span></strong><strong> (Танзания) </strong>🇹🇿</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81b7-a0d5-d92434c3980e" class="image" style="text-align:left"><a href="image%2026.png"><img style="width:384px" src="image%2026.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8197-a19a-eb020b4311da" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8103-8494-daa5bf29bac2" class="bulleted-list"><li style="list-style-type:disc"><strong>Расположен в одноименной области Танзании около города Аруша</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819f-bee0-f9ef1da58f3f" class="bulleted-list"><li style="list-style-type:disc">Занимает 756км2, создан для охраны высочайшей вершины Африки - Килиманджаро (5895м). Подножие горы находится на высоте 1829м</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81e4-be4b-c7989f107119" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-814b-a474-e10fe5d28da9" class="numbered-list" start="7"><li><strong><span style="border-bottom:0.05em solid">Водопад Виктория</span></strong><strong> (Замбия/Зимбабве) 🇿🇲🇿🇼</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-814c-92f8-c7d5b08b0f7d" class="image" style="text-align:left"><a href="image%2027.png"><img style="width:480px" src="image%2027.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8155-96b8-c3b496a9a69b" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8136-800c-f55bb090e1e2" class="bulleted-list"><li style="list-style-type:disc">Представляет собой водопад на реке <em><strong>Замбези (2660км). Имеет высоту 120м и более километра в ширину</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8157-b982-f0c396c76a82" class="bulleted-list"><li style="list-style-type:disc">Открыт в 1855г <em><strong>Дэвидом Ливингстоном</strong></em>, который и назвал данный водопад именем Британской королевы </li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81fd-9d8a-c1de71a9dbf4" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-813a-bc37-cda27be92593" class="numbered-list" start="8"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Крюгера</span></strong><strong> (ЮАР) 🇿🇦</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-810c-9ed3-cc356f4cfde9" class="image" style="text-align:left"><a href="image%2028.png"><img style="width:480px" src="image%2028.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-814d-a6d0-e83c130378ab" class="bulleted-list"><li style="list-style-type:disc">Старейший национальный парк ЮАР</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8155-91b1-e82e925b4343" class="bulleted-list"><li style="list-style-type:disc">Множество животных - слон, леопард, кабан, носорог, буйвол</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8167-9cf4-e7abbc7f80ca" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81af-b833-ecd5aca305b4" class="numbered-list" start="9"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Гарахонай</span></strong><strong> (Испания, Канары) 🇪🇸</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8132-8097-da50f379dab8" class="image" style="text-align:left"><a href="image%2029.png"><img style="width:480px" src="image%2029.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c4-8b1f-e9bc29f61fea" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Включен в список наследия ЮНЕСКО.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81fa-9757-dcb0a3ac57b6" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Известен своими скалами (назван в честь одноименной скалы высотой 1484м). Находится на островах Гомера.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-811f-9709-f3973ab32d5b" class="bulleted-list"><li style="list-style-type:disc">Также здесь произрастают <em><strong>лавровые влажные субтропические вечнозеленые леса - </strong></em><em><mark class="highlight-default"><strong>монтеверде</strong></mark></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81cc-b43e-f8fc2b7efc72" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-815a-ac37-c5a7c3eee48d" class="">Северная Америка: </h2></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-813f-80e9-c1d938ee0f9f" class="numbered-list" start="1"><li><strong><span style="border-bottom:0.05em solid">Йеллоустонский национальный парк</span></strong><strong> (США) 🇺🇸</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81e0-8d7c-c83c4f617d6b" class="image" style="text-align:left"><a href="image%2030.png"><img style="width:528px" src="image%2030.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81cb-8400-c175bd4c0ab0" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список объектов наследия ЮНЕСКО (Вайоминг, Айдахо, Монтана)</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8153-8f2b-d62eccecbbe4" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является первым в мире национальным парком!</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-815e-92ba-dc07071b5bef" class="bulleted-list"><li style="list-style-type:disc">Известен своими гейзерами, источниками и природой. <mark class="highlight-default"><strong>Озеро Йеллоустон</strong></mark><strong> является крупнейшим высокогорным озером в Северной Америке (2357м) </strong></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-818e-9ec7-f9ecc43d7529" class="bulleted-list"><li style="list-style-type:disc"><em><mark class="highlight-default"><strong>Йеллоустонская кальдера</strong></mark></em><mark class="highlight-default"> </mark>- крупнейшая вулканическая кальдера Северной Америки - супервулкан.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81d8-be9b-e7d1b9ae3bc3" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8170-8980-e5cedc2be5c5" class="numbered-list" start="2"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Олимпик</span></strong><strong> (США) 🇺🇸</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-812a-a8b6-eba117608415" class="image" style="text-align:left"><a href="image%2031.png"><img style="width:528px" src="image%2031.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81fd-b264-de36c3e6f6b2" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится в штате Вашингтон на полуострове Олимпик</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-812a-8774-f7dbab2e25be" class="bulleted-list"><li style="list-style-type:disc">Этот национальный парк знаменит, прежде всего разнообразием видов. Благодаря длительной изоляции полуострова, здесь сформировалась своеобразная флора и фауна - например, в западной части парка растет <em><strong>дождевой лес</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ae-a96b-f446b99e3f0b" class="bulleted-list"><li style="list-style-type:disc">Также здесь есть ледники на горном хребте <em><mark class="highlight-default"><strong>Олимпик-Маунтинс</strong></mark></em><em><mark class="highlight-red"><strong> </strong></mark></em>(2427м) </li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8192-917b-c8411e63d7a1" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8108-a6a8-d6f08bb7b984" class="numbered-list" start="3"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Редвуд</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-817f-9370-e77a803a2d41" class="image" style="text-align:left"><a href="image%2032.png"><img style="width:528px" src="image%2032.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8159-abf4-d5a48564c689" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Включен в список всемирного наследия ЮНЕСКО. Находится в Калифорнии</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81db-882b-ed425c1f0b1c" class="bulleted-list"><li style="list-style-type:disc">Представляет собой девственные дождевые леса умеренного климата.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819e-adff-ea2787c288d7" class="bulleted-list"><li style="list-style-type:disc">Парк покрыт древними <em><strong>лесами секвойи</strong></em>. Эти деревья являются одной из самых высоких и массивных на Земле. Кроме лесов секвойи, парк сохраняет исконную флору этих мест, пастбища прерий, культурные ресурсы, части рек и ручьев + 60км нетронутой береговой линии.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-812e-a02f-dbc510ec409b" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8133-8227-c5310b0d2d31" class="numbered-list" start="3"><li><strong><span style="border-bottom:0.05em solid">Йосемитский национальный парк</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-819f-aeea-ed707cdaf4a7" class="image" style="text-align:left"><a href="image%2033.png"><img style="width:480px" src="image%2033.png"/></a><figcaption>Йосемитский водопад</figcaption></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c7-84d9-f84d46fc761f" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится в Калифорнии на западных слонах горного хребта Сьерра-Невада</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c4-9842-d7239b506fec" class="bulleted-list"><li style="list-style-type:disc">Почти 95% нац. парка принадлежит к зоне дикой природы</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8149-9a0b-c9b3074f0b35" class="bulleted-list"><li style="list-style-type:disc">Знаменит своими водопадами: <em><strong>Йосемитский</strong></em> (739м), <em><strong>Сноу-Крик</strong></em> (652м), Сентинел (585м), <em><strong>Риббон</strong></em> (492м), <em><strong>Невада</strong></em> (180м), а также огненным водопадом <em><strong>Лошадиный Хвост</strong></em> (650м) - в феврале можно увидеть редкое явление, когда лучи закатного солнца отражаются в падающем потоке водопада, и он становится похож на струю огня.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-812e-9090-de87aa8963f9" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8149-b69e-c507584190da" class="numbered-list" start="4"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Гранд-Каньон</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8126-8fee-eee500c94263" class="image" style="text-align:left"><a href="image%2034.png"><img style="width:528px" src="image%2034.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8103-add2-f19e52c44ca7" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится в Аризоне и входит в список всемирного наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8182-ba18-d6806a2109f4" class="bulleted-list"><li style="list-style-type:disc">Представляет собой гигантский каньон реки Колорадо (2334км)</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81fd-884e-cf4f4688f154" class="bulleted-list"><li style="list-style-type:disc">Гранд-Каньон не является самым глубоким на Земле, однако он известен благодаря своим размерам и пейзажам. Максимальная глубина - 1829м, а ширина достигает 29км</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a9-8040-c99e715427e0" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Образовался из-за вертикальных поднятий 65млн лет назад вследствие которых уклон реки Колорадо увеличился и усилилась флювиальная денудация. </strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-810c-a1ce-ffa194a21f22" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81b9-97b8-ea24b4f525b8" class="numbered-list" start="5"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Грейт-Смоки-Маутинс</span></strong><strong> (США) </strong>🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81b8-aae6-cf00d9186e74" class="image" style="text-align:left"><a href="image%2035.png"><img style="width:480px" src="image%2035.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d5-ac69-f4d0483bf1bb" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Расположен на востоке страны и поделен поровну между двумя штатами - Теннеси и Северной Каролиной </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8139-9ac7-c2d7877fdcce" class="bulleted-list"><li style="list-style-type:disc"><strong>Является самым посещаемым национальным парком США - 9,5млн туристов в год</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-811f-a1a9-ebe626b83ce1" class="bulleted-list"><li style="list-style-type:disc">Тут представлены нетронутые древние леса, в основном это вариации широколиственного: <em><strong>Аппалачский лес, Северный смешанный лес, Елово-Пихтовый лес, Тсуговый лес, Дуброво-сосновый лес</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a6-999b-f19a7d3d042b" class="bulleted-list"><li style="list-style-type:disc">Также тут есть достопримечательности, <em><strong>связанные с индейцами и первыми переселенцами</strong></em>. Чироки называли эти горы голубыми и дымными, так как миллионы деревьев и растений создают высокую влажность, и над лесом поднимается туман</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81cc-b3ea-d7ba8ebbeee7" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81d7-8744-c1fe89ffb90b" class="numbered-list" start="6"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Карлсбадские пещеры</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81ae-8f6b-e0d9faf3fadb" class="image" style="text-align:left"><a href="image%2036.png"><img style="width:528px" src="image%2036.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8148-9441-d2acacf5ce5f" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом наследия ЮНЕСКО и находится в штате Нью-Мексико в пустыне Чиуауа </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-819e-9a0b-dfa7ad6b3f6b" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Главная достопримечательность</strong></em> - цепь из 80 карстовых Карлсбадских пещер, для которых характерно разнообразие и высокий эстетичный вид минеральных образований. Возраст пещер около 250млн лет</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8112-9391-eae41e349dc1" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8133-83ba-e385bcdbc5e3" class="numbered-list" start="7"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Мамонтова пещера</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8115-a095-e85e95c62487" class="image" style="text-align:left"><a href="image%2037.png"><img style="width:480px" src="image%2037.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8161-b017-e134d568950f" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится в штате Кентукки и является объектом ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8138-b3b5-f09cb5818488" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Мамонтова пещера является самой длинной в мире - 676км. Названа она так именно из-за своих размеров, а не из-за мамонтов.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ea-b66e-e2b86692973c" class="bulleted-list"><li style="list-style-type:disc">Необычайно сухая, сотканная из крепчайших горных пород, уникальная пещера украшена естественными застывшими водопадами. Дно пещеры изрезали естественные реки, одна впадает в подземное озеро, а другая прорезает пещеру насквозь.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8160-9ad4-ffccd3520cd4" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-818a-86e5-cdfea2a0f450" class="numbered-list" start="8"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Долина Смерти</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8133-b690-cf979772458b" class="image" style="text-align:left"><a href="image%2038.png"><img style="width:480px" src="image%2038.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8184-b358-f5bd06407a6e" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится на границе штатов Калифорния и Невада - к востоку от Сьерры-Невады в пустыне Мохаве</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8102-ad19-c298244f4e86" class="bulleted-list"><li style="list-style-type:disc">Представляет собой межгорную впадину. Здесь находится самая низкая точка Северной Америки (-86м) - Badwater</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ca-9734-f30c7f38db4c" class="bulleted-list"><li style="list-style-type:disc">Здесь была зафиксирована самая жаркая температура на земле +56,7С</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8176-a101-df0f9346d07e" class="bulleted-list"><li style="list-style-type:disc">В долине смерти проживает индейское племя <em><strong>Тимбиша.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ca-a199-dc4acf06194f" class="bulleted-list"><li style="list-style-type:disc">Свое название Долина смерти получила из-за массовой гибели людей во время золотой лихорадки в Калифорнии в 1849г</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81de-badf-f1ce0b8206ed" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81ee-80f2-c2e9825c3677" class="numbered-list" start="9"><li><strong><span style="border-bottom:0.05em solid">Долина монументов</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-812e-99b3-cad11b3830d4" class="image"><a href="image%2039.png"><img style="width:709.953125px" src="image%2039.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ce-af5b-e0da30a69d8f" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится на стыке штатов Аризона и Юта</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8114-92d4-e51e21c47310" class="bulleted-list"><li style="list-style-type:disc">Представляет собой останцы из красного песчаника, которые образовались в результате дефляции из-за ветров в плато Колорадо</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a8-a579-d38bb8155334" class="bulleted-list"><li style="list-style-type:disc">Тут есть месторождения урана, меди и ванадия</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8199-b0d3-c16eb7d749b0" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Данная область является священной для индейского племени Навахо, так что тут часто находят петроглифы с изображениями чего-либо</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-815c-aef9-f2bd06ed05ac" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8121-be41-cd8265fe2267" class="numbered-list" start="10"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Эверглейдс</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81f8-a253-e8b5d0329515" class="image" style="text-align:left"><a href="image%2040.png"><img style="width:576px" src="image%2040.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a7-948e-c7c7b474406a" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Огромный болотный комплекс на юге штата Флорида, включенная в список наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c4-b6d9-f07d44df9e5c" class="bulleted-list"><li style="list-style-type:disc">Территория парка сильно подверглась антропогенному влиянию, в частности здесь находятся урбанизированные районы Майами</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-816e-9750-d15177ab3405" class="bulleted-list"><li style="list-style-type:disc">На территории парка есть естественные мангровые заросли, а также здесь обитают ламантины, аллигаторы и множество других животных</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81b1-b57c-e3e69fe70e7f" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-814e-9874-cfbbb50030c3" class="numbered-list" start="11"><li><strong>Парки и резерваты Клуэйн, Рангел-Сент-Элайас, Глешер-Бей и Татшеншини-Алсек (США/Канада) </strong>🇺🇸🇨🇦</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81b8-b3c5-e9699f4405b9" class="image" style="text-align:left"><a href="image%2041.png"><img style="width:576px" src="image%2041.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81fd-8d02-f16e5ae10c6f" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Система парков, находящаяся в Британской Колумбии и Аляске занесена в список наследия ЮНЕСКО </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8157-a615-fe52b5aa0b70" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Состоит из уникальных ледниковых полей, ледников, а также из-за обитания в них гризли, северных оленей, баранов Далла + горы Святого Ильи (Логан 5247м) </strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81e6-ac94-cabd2419d9d8" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-814d-bd8f-ce59e8ee1b63" class="numbered-list" start="12"><li><strong><span style="border-bottom:0.05em solid">Парки Канадских Скалистых гор</span></strong><strong> (Канада)</strong> 🇨🇦</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-815f-aacf-f3eb99985b3d" class="image" style="text-align:left"><a href="image%2042.png"><img style="width:480px" src="image%2042.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-812a-98f8-e3224ff490b7" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Система более чем из 7 национальных парков включена в список наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8178-a5dc-e9f0eebe1498" class="bulleted-list"><li style="list-style-type:disc">Парки изобилуют горными пиками, ледниками, озерами, водопадами, каньонами и известняковыми пещерами, что формирует поразительный высокогорный ландшафт.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81b3-bb5b-ea0d02393077" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Бёрджес-Шейл</strong></em> - место обнаружения уникальных окаменелых остатков обитателей древних морей.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8183-82f3-ce571edf7c86" class="bulleted-list"><li style="list-style-type:disc">Здесь протекают такие реки как <em><strong>Колумбия (2000км)</strong></em>, <em><strong>Северный Саскачеван (1287км)</strong></em>, <em><strong>Атабаска (1231км), Фрейзер (1370км)</strong></em> </li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8153-87d0-ea8c5bde5c34" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8183-8c71-f4453f7c23a1" class="numbered-list" start="13"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Вуд-Баффало</span></strong><strong> (Канада) </strong>🇨🇦</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81c2-b2b3-d5a0b588fd49" class="image" style="text-align:left"><a href="image%2043.png"><img style="width:528px" src="image%2043.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8111-8d1f-f70f4d5be183" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится на границе Альберты и Северо-Западных Территорий и входит в список наследия ЮНЕСКО.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8192-b9b4-f500be92e480" class="bulleted-list"><li style="list-style-type:disc">Является крупнейшим национальным парком Канады и одним из крупнейших в мире.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a7-953e-c1b1f5390646" class="bulleted-list"><li style="list-style-type:disc">Находится между озерами <em><strong>Атабаска</strong></em> и <em><strong>Большое Невольничье</strong></em> в поясе сухих бореальных хвойных лесов с умеренно прохладным климатом, долгой и холодной зимой, но с теплым летом. Здесь соседствуют прерии и луга.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d0-a8c2-c4282f3ecfe9" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Парк известен своей огромной популяцией американских бизонов.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8170-961f-e82d8322e413" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8104-a685-f5c87678c85b" class="numbered-list" start="14"><li><strong><span style="border-bottom:0.05em solid">Острова и ОПТ в районе Калифорнийского залива </span></strong><strong>(Мексика)</strong> 🇲🇽</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8199-9268-c37e751a2499" class="image" style="text-align:left"><a href="image%2044.png"><img style="width:576px" src="image%2044.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c2-bff1-d036af49a584" class="bulleted-list"><li style="list-style-type:disc">Объект, располагающийся на северо-западе Мексики, включает 244 участка - островов и отрезков побережья <em><strong>Калифорнийского залива</strong></em>, сосредоточенных в пределах 9 парков и резерватов - <em><strong>объект ЮНЕСКО</strong></em> </li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8103-afa6-d1c1dd4eac84" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Здесь отмечено 695 видов сосудистых растений - это больше, чем на любом другом объекте всемирного наследия, как морском, так и наземном</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8169-ac16-f07d4b2fa9d3" class="bulleted-list"><li style="list-style-type:disc">Более 890 видов рыбы, 90 из которых - эндемики. Также здесь встречаются 39% от общемирового числа видов морских млекопитающих, в частности, примерно треть общемирового числа видов морских китообразных.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-813d-8d72-f82da180330b" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8100-852e-e7b637f75f01" class="numbered-list" start="15"><li><strong><span style="border-bottom:0.05em solid">Заповедник Себастьян-Вискаино</span></strong><strong> (Мексика)</strong> 🇲🇽</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8191-a0f0-f7af90ef086f" class="image" style="text-align:left"><a href="image%2045.png"><img style="width:576px" src="image%2045.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8120-a97b-fbcd76cb58e5" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Расположен в центральной части Калифорнийского полуострова и является объектов списка ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-812c-a890-f110406234de" class="bulleted-list"><li style="list-style-type:disc">Располагается в одноименном заливе и является крупнейшим резерватом Латинской Америки</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8157-a68c-dc0e040f0e64" class="bulleted-list"><li style="list-style-type:disc">Тут огромное количество разных животных - <em><strong>койоты, грызуны, бакланы, а также множество китов: серые и синие + морские слоны и львы </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8139-bc89-ca0968a65372" class="bulleted-list"><li style="list-style-type:disc">Впервые территория полуострова была заселена <em><strong>индейцами кочими</strong></em> еще 11т лет назад, в некоторых пещерах можно заметить следы их творчества  </li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-819a-906e-f910af963eb7" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81f2-9a83-e645eddc919d" class="numbered-list" start="16"><li><strong><span style="border-bottom:0.05em solid">Мезоамериканский барьерный риф</span></strong><strong> (Мексика/Гватемала/Белиз/Гондурас)</strong> 🇲🇽🇬🇹🇧🇿🇭🇳</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8146-a513-fa3e1f962093" class="image" style="text-align:left"><a href="image%2046.png"><img style="width:528px" src="image%2046.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81f2-a631-f4f76d3ce969" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Представляет собой морской регион, простирающийся более чем на 1126км вдоль побережья Мексики, Гватемалы, Белиза и Гондураса - Крупнейший барьерный риф Северного полушария.</strong></em> </li></ul></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-81da-9cb7-f3bfe8bdd58c" class="">Южная Америка: </h2></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81f8-b19b-d3e72b9229f9" class="numbered-list" start="1"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Канайма</span></strong><strong> (Венесуэла) 🇻🇪</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8108-87d5-c8bce96bf92f" class="image"><a href="image%2047.png"><img style="width:709.984375px" src="image%2047.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8193-a664-eb3c11205c3b" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Природный парк на границе с Бразилией и Гайаной в штате Боливар занесен в список ЮНЕСКО </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8174-9ccc-ce74db1a96a5" class="bulleted-list"><li style="list-style-type:disc">Главной достопримечательностью являются <em><mark class="highlight-default"><strong>тепуи</strong></mark></em><mark class="highlight-default"> </mark>- <em><strong>столовые горы в Гвианском плоскогорье. Они образовались из-за денудации древнего плато, мягкие породы вымылись, а твердый песчаник и гранит остались. Самая известная - Рорайма.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c8-a258-ed8ddff36364" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Тут находится высочайший водопад мира - Анхель (979м) на реке Кереп.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-818b-9a21-eb96fbee5b6f" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81cd-863a-dc12fb09d1e0" class="numbered-list" start="2"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Жау</span></strong><strong> (Бразилия) 🇧🇷</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81db-bb16-d1549ea716b5" class="image" style="text-align:left"><a href="image%2048.png"><img style="width:384px" src="image%2048.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-812e-af82-d977dc77e9df" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Национальный парк входит в список наследия ЮНЕНСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81ce-bc2b-ebdef434c1f8" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Самый большой лесной заповедник в Южной Америке, площадь около 25 тысяч км2</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8109-a0ae-ca6f59f59d88" class="bulleted-list"><li style="list-style-type:disc">Является хорошим примером сохранения амазонских лесов (сельвы). Тут обитают ламантины, ягуары, речные дельфины.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-819a-acea-e1844c60bc14" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-816b-969f-eca05e8cecec" class="numbered-list" start="3"><li><strong><span style="border-bottom:0.05em solid">Заповедник Пантанал</span></strong><strong> (Бразилия, Парагвай, Боливия) 🇧🇷🇵🇾🇧🇴</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8180-abe8-fb23cabb6403" class="image" style="text-align:left"><a href="image%2049.png"><img style="width:392px" src="image%2049.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-813c-81a8-e7200e13e04a" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Заповедник Пантанал является объектом всемирного наследия ЮНЕСКО </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8155-94e7-ebbfcad5000d" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Данный болотный комплекс является самым крупным в мире болотом (195 тыс км2)</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8121-a91b-d17047e2bd96" class="bulleted-list"><li style="list-style-type:disc">Находится в экорегионе <em><strong>Гран-Чако</strong></em>, здесь есть 2 ярко выраженных сезона: зимой тут засуха, так что часть болот превращается в солончаки, а летом - сплошное озеро.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-818e-adc5-f7089aea9647" class="bulleted-list"><li style="list-style-type:disc">Тут обитает свыше <em><strong>10млн крокодилов, около 3500 видов растений, 650 видов птиц, 230 видов рыб, 80 видов млекопитающих.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8185-8bb6-e68cc7aeb9cf" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-810a-888d-ccff2d182b48" class="numbered-list" start="4"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Игуасу </span></strong><strong>(Аргентина)</strong> 🇦🇷</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-810b-8d06-ffb53842136d" class="image" style="text-align:left"><a href="image%2050.png"><img style="width:576px" src="image%2050.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-811e-b744-f16b765172b3" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Входит в список всемирного наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81b1-9c28-f2043cef437a" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится на северо-востоке Аргентины</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a9-9c93-ea9c24aa3f8b" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Водопады Игуасу - комплекс из 275 водопадов на реке Игуасу (1320км) на границе Аргентины и Бразилии</strong></em>. Его высота около 82м.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-814a-95d2-cab9b8bfe9b0" class="bulleted-list"><li style="list-style-type:disc">Около водопадов находятся <em><strong>субтропические атлантические леса Аргентины и ГЭС Итайпу.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-814a-867d-e14ffe8bb45d" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8176-b7b7-ec081c58af7c" class="numbered-list" start="5"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Чако</span></strong><strong> (Аргентина)</strong> 🇦🇷</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81fc-8f08-ccb3a5e29940" class="image" style="text-align:left"><a href="image%2051.png"><img style="width:480px" src="image%2051.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8170-96a1-e07465a1c909" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Расположен в центральной части экорегиона Гран-Чако (тропический континентальный засушливый климат) </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8116-807f-d3b0aacc4769" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Здесь протекает река Рио-Негро (635км)</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8015-abe4-da9a651c9bcf" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Здесь произрастает редкое дерево квебрахо</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-818d-b5cf-e1383ac44255" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81a1-a6ec-f5bb3b776f38" class="numbered-list" start="6"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Лос-Гасьярес</span></strong><strong> (Аргентина)</strong> 🇦🇷</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8134-b9ac-cba5007e1f0f" class="image" style="text-align:left"><a href="image%2052.png"><img style="width:480px" src="image%2052.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8132-869f-dd37cdb93411" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Данный национальный парк входит в список наследия ЮНЕСКО </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8195-931d-d3d795dab42c" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится на юге Патагонии в Аргентинской провинции Санта-Крус. </strong></em>Парк является вторым по величине природоохранным объектом в Аргентине</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8162-a513-fb1e6a7d75bb" class="bulleted-list"><li style="list-style-type:disc">40% территории парка покрыто вечными ледниками, которые питаются с огромной ледяной шапки в <em><strong>Патагонских Андах</strong></em>. Оледенение начинается на высоте 2500м, ледники сползают до 200м, тая и эродируя ближайшее пространство, часто ледники заканчиваются в озерах и Тихом океане</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8175-8047-c5a6519ef6de" class="bulleted-list"><li style="list-style-type:disc">Тут расположено множество гор, а также озер. Озеро <em><mark class="highlight-default"><strong>Лаго-Архентино</strong></mark></em><em><strong> является крупнейшим в Аргентине.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81ef-8c43-d294e94f384d" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-816a-96cd-f605f5aeeab0" class="numbered-list" start="7"><li><strong><span style="border-bottom:0.05em solid">Полуостров Вальдес </span></strong><strong>(Аргентина) </strong>🇦🇷</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8180-8ab5-d106460bbbce" class="image" style="text-align:left"><a href="image%2053.png"><img style="width:392px" src="image%2053.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8181-9834-ddbe50e9a127" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8184-bec2-e841097dbfc0" class="bulleted-list"><li style="list-style-type:disc">Большая часть полуострова представляет собой незаселенную территорию. <em><strong>Тут имеется несколько соленых озер, урез воды одного из них находится на отметке -40м над уровнем моря</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81e4-83ea-eddfe5c9fdff" class="bulleted-list"><li style="list-style-type:disc">Полуостров имеет большое значение для сохранения морских млекопитающих. Это место размножения исчезающего южного кита, морских слонов и морских львов. Также здесь водятся касатки.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-819e-8a48-ec4c30695277" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81e2-a8de-f71241312f6a" class="numbered-list" start="8"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Рапануи</span></strong><strong> (Чили)</strong> 🇨🇱</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81f7-9011-ca97dac147f3" class="image" style="text-align:left"><a href="image%2054.png"><img style="width:480px" src="image%2054.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d2-874d-f2f71584145f" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом всемирного наследия ЮНЕСКО </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-811d-a9e2-d3d5509a3b00" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Рапануи</strong></em> - это местное название острова Пасхи. Сообщество полинезийского происхождения проживает здесь с IV века, создав скульптуры Моаи.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-815b-bb77-ef88c9cca4e5" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Находится в юго-восточном углу Полинезийского треугольника. Остров имеет вулканическое происхождение, здесь расположен потухший вулкан Рано-Кау.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8175-9f53-f318af48dcbc" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-817c-9543-c46a49fb23cb" class="numbered-list" start="9"><li><strong><span style="border-bottom:0.05em solid">Галапагосские острова</span></strong><strong> (Эквадор)</strong> 🇪🇨</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81d7-81fb-df735495ecbd" class="image" style="text-align:left"><a href="image%2055.png"><img style="width:384px" src="image%2055.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8117-9a80-fad510b77206" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Острова являются объектом наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-810b-b081-f9356417a023" class="bulleted-list"><li style="list-style-type:disc">Острова представляют собой следствие мантийного плюма, поэтому на них много вулканов.</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c1-a666-dca1d290aaf9" class="bulleted-list"><li style="list-style-type:disc">В основном нац. парк создан для защиты животных - <em><strong>галапагосская черепаха, тюлень, олуша, пеликан</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-8126-b4fb-f9fde0ccbf49" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="1e53e57c-5871-8116-adda-ef24a13e597b" class="">Австралия и Океания:</h2></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81fd-9bc1-c35309adb85f" class="numbered-list" start="1"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Улуру-Ката-Тьюта</span></strong><strong> (Австралия) 🇦🇺</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-816f-bf29-f58db77583f4" class="image" style="text-align:left"><a href="image%2056.png"><img style="width:480px" src="image%2056.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81a9-82bd-c8fc16b25dfc" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Данный парк является объектом ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8133-b1d8-eff00a8ac140" class="bulleted-list"><li style="list-style-type:disc">Основную ценность здесь представляет<strong> инзельберг</strong> <em><strong>Улуру</strong></em> - <em><strong>останец древнего хребта, подвергшийся эрозии</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d3-9088-d4ed1c8753b0" class="bulleted-list"><li style="list-style-type:disc">Климат здесь можно назвать даже <em><strong>резко-континентальным</strong></em> (летом +45, зимой -5). Растительность представлена полупустынными ландшафтами, а также <em><strong>акациями, эвкалиптами, гревиллеей.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81d2-9dd8-f74743a1bb2e" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-815a-ab47-f8e2aac756ed" class="numbered-list" start="2"><li><strong><span style="border-bottom:0.05em solid">Влажные тропики Квинсленда</span></strong><strong> (Австралия) 🇦🇺</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8132-bed9-e4670a2ef9ff" class="image" style="text-align:left"><a href="image%2057.png"><img style="width:528px" src="image%2057.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8105-a3e8-d7f435304635" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом наследия ЮНЕСКО </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-816c-b0d5-f3a05f17eb9f" class="bulleted-list"><li style="list-style-type:disc">Представляет собой влажные тропические леса на северо-восточном побережье Австралии, отличающийся большим разнообразием рельефа (реки, водопады, горы)</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8137-9fe6-c90d6ef9251e" class="bulleted-list"><li style="list-style-type:disc">Включает в себя 3 георегиона - <em><strong>Район Большого Водораздельного Хребта, район Больших утесов и прибрежные равнины. Раньше на этой территории был развит вулканизм, поэтому тут можно встретить лавовые конуса и кратерные озера.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81e4-a128-f2b4b7a33cff" class="bulleted-list"><li style="list-style-type:disc">Тут находится высочайший водопад Австралии - <em><strong>Уолламен (305м)</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81a5-9f0a-fa5958400d93" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8145-af66-f9ca201fffc4" class="numbered-list" start="3"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Какаду</span></strong><strong> (Австралия)</strong> <strong>🇦🇺</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-81e7-aa58-ed7ea2156670" class="image" style="text-align:left"><a href="image%2058.png"><img style="width:432px" src="image%2058.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8170-8bf6-c7d097ee84a5" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81e4-8c2c-fe53475300db" class="bulleted-list"><li style="list-style-type:disc">Находится на полуострове <em><strong>Арнем-Ленд</strong></em>, который представляет собой горное плато</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8168-b46e-e88f062ddba8" class="bulleted-list"><li style="list-style-type:disc">Название полуостров получил от <em><strong>народа Какаду, который раньше проживал на этой территории</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8198-b75c-cea5f6c2a781" class="bulleted-list"><li style="list-style-type:disc">В парке имеются древние наскальные рисунки (самым древним около 18 тыс. лет).</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81b8-aac8-ddb42ab8288e" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-818d-b491-cd222013224d" class="numbered-list" start="4"><li><strong><span style="border-bottom:0.05em solid">Большой Барьерный риф</span></strong><strong> (Австралия)</strong> <strong>🇦🇺  </strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-810f-bafa-cd1cf3ff2ac3" class="image" style="text-align:left"><a href="image%2059.png"><img style="width:288px" src="image%2059.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-810f-bc89-c17d97a1ce5f" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом наследия ЮНЕСКО</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8188-b30c-c2a47e398a0a" class="bulleted-list"><li style="list-style-type:disc">Представляет собой крупнейший в мире коралловый риф. <em><strong>Состоит из более чем 2900 коралловых рифов, расположенных вдоль северо-восточного побережья Австралии</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8127-aeef-e8c44dd7292c" class="bulleted-list"><li style="list-style-type:disc">В коралловых рифах имеется своя уникальная экосистема и животный мир. Также развит туризм. </li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81d5-b60e-d30f217428af" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8113-bfcc-c708c84c12f5" class="numbered-list" start="5"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Блу-Маунтинс</span></strong><strong> (Австралия)</strong> <strong>🇦🇺</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-818e-bc23-f0cdc4353435" class="image" style="text-align:left"><a href="image%2060.png"><img style="width:384px" src="image%2060.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d2-b0de-c76c5a499fcf" class="bulleted-list"><li style="list-style-type:disc">Национальный парк находится на юго-востоке Австралии в горном хребте <em><strong>Голубые горы (часть Большого Водораздельного хребта).</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81d8-9732-c2bfcdad4259" class="bulleted-list"><li style="list-style-type:disc">Представляет собой изрезанное ущельями горное плато. Здесь находятся скалы <em><strong>Три Сестры.</strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-819c-8f2e-e2ad4226932a" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81de-9fd8-f76666fcff62" class="numbered-list" start="6"><li><strong><span style="border-bottom:0.05em solid">Залив Шарк</span></strong><strong> (Австралия)</strong> <strong>🇦🇺</strong></li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-818e-b1c4-fb75c370bed5" class="image" style="text-align:left"><a href="image%2061.png"><img style="width:528px" src="image%2061.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-813c-9a58-e4b60541e638" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом ЮНЕСКО</strong></em> </li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8186-bf48-e2752e2740c8" class="bulleted-list"><li style="list-style-type:disc">Находится на Северо-Западе Австралии около города Перт</li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-814b-a7e9-e7fecdd3e94f" class="bulleted-list"><li style="list-style-type:disc">Залив известен тем, что на площади около 4000км2 его дно покрывают специальные водоросли, в которых обитают редкие виды планктона.</li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81a2-9dcb-c68f3de189fc" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-81d8-9e73-ea97b8423d56" class="numbered-list" start="7"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Фьордленд</span></strong><strong> (Новая Зеландия)</strong> 🇳🇿</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8120-ba17-e3f6b68381e1" class="image" style="text-align:left"><a href="image%2062.png"><img style="width:528px" src="image%2062.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8191-a9fc-ebe4677731d3" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является крупнейшим национальным парком Новой-Зеландии (12,5 тыс. км2 площадь) </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-813f-aa90-c9a57ed44fc4" class="bulleted-list"><li style="list-style-type:disc">Известен своими <em><strong>фьордами Тасманового моря</strong></em>. Также своими природными объектами - озеро <em><mark class="highlight-default"><strong>Манапоури</strong></mark></em><mark class="highlight-default"> </mark>(глубочайшее в Новой Зеландии - 444м в глубину) + озеро <em><strong>Те-Анау (270м). Горы в этом регионе имеют высоту около 2746м.</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8058-84ed-de296eb132d3" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Здесь расположен высочайший водопад Новой Зеландии - </strong></em><em><mark class="highlight-default"><strong>Браун </strong></mark></em><em><strong>(836м) </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8145-9f3a-f7600ebe8001" class="bulleted-list"><li style="list-style-type:disc">Климат — умеренный морской, но очень влажный &gt;4000мм осадков. Из-за влажности здесь произрастают <em><strong>влажные тропические леса (на склонах гор)</strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-80c6-a250-c08b3d09481c" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Очень много эндемиков - какапо, такахе, киви, скалистый крапивник, пингвины </strong></em></li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-81c8-a71f-fcd1cf1f1b96" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1e53e57c-5871-8114-81d8-ef48a404c93a" class="numbered-list" start="8"><li><strong><span style="border-bottom:0.05em solid">Национальный парк Гавайские вулканы</span></strong><strong> (США)</strong> 🇺🇸</li></ol></div><div style="display:contents" dir="ltr"><figure id="1e53e57c-5871-8171-95e4-ef06d8c35cd0" class="image" style="text-align:left"><a href="image%2063.png"><img style="width:576px" src="image%2063.png"/></a><figcaption>Вулкан Мауна-Лоа</figcaption></figure></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-8142-914e-e506c4dc408b" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Является объектом наследия ЮНЕСКО</strong></em> </li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81c2-b0d5-c1e280e8786b" class="bulleted-list"><li style="list-style-type:disc">На территории парка находятся активные вулканы <em><mark class="highlight-default"><strong>Килауэа </strong></mark></em><em><strong>(1243м) и </strong></em><em><mark class="highlight-default"><strong>Мауна-Лоа</strong></mark></em><em><mark class="highlight-red"><strong> </strong></mark></em><em><strong>(4169м). </strong></em></li></ul></div><div style="display:contents" dir="auto"><ul id="1e53e57c-5871-81b1-bd04-eb729751489f" class="bulleted-list"><li style="list-style-type:disc">Большую часть парка занимает вулканическая пустыня <mark class="highlight-default"><strong><span style="border-bottom:0.05em solid">Кау</span></strong></mark>, которая сложена вулканическими отложениями. Растительности тут нет из-за постоянных кислотных дождей, которые выпадают из <em><strong>вога </strong></em>(вулканический смог - смесь вулканических газов и водяного пара). </li></ul></div><div style="display:contents" dir="auto"><p id="1e53e57c-5871-818e-b591-f20797ca86c0" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
